@@ -1,0 +1,407 @@
+/* --- Architecture : ITCSS --- */
+/* --- Convention : Utility first --- */
+
+/* -------- */
+/* Settings */
+/* -------- */
+
+:root {
+    --color-primary: #54BCBF;
+    --color-secondary: #F7CF9B;
+    --color-tertiaire: #2D190D;
+    --color-blanc: #FFFFFF;
+    --color-blanc2: #F3F2EC;
+    --color-noir: #000000;
+
+    --typo-titre: "Libre Caslon Text";
+    --typo-texte: "Manrope";
+}
+
+/* ------- */
+/* Generic */
+/* ------- */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-blanc2);
+}
+
+/* -------- */
+/* Elements */
+/* -------- */
+
+h1, h2, h3 {
+    font-family: var(--typo-titre);
+    margin: 0;
+    padding: 0;
+}
+
+p, a, li, span {
+    font-family: var(--typo-texte);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    padding: 1.25rem;
+}
+
+header {
+    background-color: var(--color-secondary);
+    display: flex;
+    height: 2rem;
+    padding: 1.5rem 1em;
+    justify-content: center;
+    gap: 6rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header nav a {
+    font-family: var(--typo-texte);
+    text-decoration: none;
+    color: var(--color-noir);
+}
+
+nav {
+    display: flex;
+    gap: 3.125rem;
+    align-items: center;
+}
+
+footer{
+    background-color: var(--color-tertiaire);
+    color: var(--color-blanc);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------- */
+/* Objects */
+/* ------- */
+
+.text-black {
+  color: var(--color-noir);
+}
+.text-white {
+  color: var(--color-blanc);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-blanc {
+    background-color: var(--color-blanc);
+}‡
+.bg-blanc2 {
+    background-color: var(--color-blanc2);
+}
+
+.text-16 {
+  font-size: 1rem;
+}
+.text-24 {
+  font-size: 1.5rem;
+}
+.text-32 {
+  font-size: 2rem;
+}
+.text-64 {
+  font-size: 4rem;
+}
+.text-center {
+  text-align: center;
+}
+.underline {
+  text-decoration: underline;
+}
+.decor-none {
+  text-decoration: none; 
+}
+
+.decor-none:hover {
+  text-decoration: none; 
+}
+
+.w-35pc {
+    width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+    .w-35pc {
+        width: 55%;
+    }
+}
+
+.w-50pc {
+    width: 50%;
+}
+
+.gap-8{
+  gap: 0.5rem;
+}
+.gap-12{
+  gap: 0.75rem;
+}
+.gap-16{
+  gap: 1rem;
+}
+.gap-24{
+  gap: 1.5rem;
+}
+.gap-32{
+  gap: 2rem;
+}
+.gap-48{
+  gap: 3rem;
+}
+.gap-64{
+  gap: 4rem;
+}
+.gap-128{
+  gap: 8rem;
+}
+
+.w-60pc {
+    width: 60%;
+}
+.w-90pc {
+    width: 90%;
+}
+.w-full {
+    width: 100%;
+}
+
+.max-w-70pc {
+    max-width: 70%;
+}
+
+.m-auto {
+    margin: auto;
+}
+.mb-64 {
+    margin-bottom: 4rem;
+}
+
+.rounded-20 {
+    border-radius: 1.25rem;
+    padding: 2rem 1rem;
+    margin-bottom: 15px;
+}
+
+.p-40-30 {
+    padding: 2.5rem 1.875rem;
+}
+.p-16{
+    padding: 1rem;
+}
+.p-32{
+    padding: 2rem;
+}
+.py-16 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-48 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* FLEXBOX */
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-resp{
+    flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+    .flex-row-resp {
+        flex-direction: row;
+    }
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+
+/* ---------- */
+/* Components */
+/* ---------- */
+.cta {
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-blanc);
+    padding: 0.3125rem 1.25rem;
+    font-family: var(--typo-texte);
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: min-content;
+    text-wrap: nowrap;
+    text-decoration: none;
+}
+
+.cta:hover {
+    background-color: var(--color-secondary);
+    text-decoration: none;
+    color: var(--color-noir);
+}
+
+.icone-50px {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.newsletter {
+    background-color: var(--color-blanc2);
+    max-width: min-content;
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+    border-radius: 1.25rem;
+}
+
+.form-newsletter{
+    width: 16rem;
+    max-width: 90%;
+    background-color: var(--color-blanc);
+    border: none;
+    border-radius: 1.25rem;
+    padding: 0.5rem 1.25rem;
+}
+
+.card {
+    background-color: var(--color-blanc);
+    border-radius: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 260px;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+}
+
+.text-hover {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(83, 83, 83, 0.8);
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.875rem;
+}
+
+.card:hover .text-hover {
+    display: block;
+}
+
+.card-contact {
+    background-color: var(--color-secondary);
+    padding: 0.75rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    text-wrap: nowrap;
+    max-width: 15rem;
+    height: 12rem;
+}
+
+#contact input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    width: 15rem;
+}
+
+/* --------- */
+/* Utilities */
+/* --------- */
+
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+        justify-content:flex-start;
+    }
+
+    nav {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+}

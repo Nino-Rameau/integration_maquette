@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav></nav>
+        </header>
+        <main class="flex flex-col gap-64 py-48">
+            <h1 class="text-center">Nous contacter</h1>
+            <div class="flex flex-row-resp w-90pc m-auto items-center gap-16 justify-center">
+                <div class="card-contact">
+                    <img src="./assets/icone/phone-line.svg" class="icone-50px" alt="Icône de téléphone">
+                    <div>
+                        <h2>Par téléphone :</h2>
+                        <a href="tel:+33164666899" class="text-primary decor-none">
+                            <strong>+33 1 64 66 68 99</strong>
+                        </a>
+                    </div>
+                    <p>Ligne du service client Jeff de Bruges</p>
+                </div>
+                <div class="card-contact">
+                    <img src="./assets/icone/mail-line.svg" class="icone-50px" alt="Icône de mail">
+                    <div>
+                        <h2>Par mail :</h2>
+                        <a href="mailto:contactonline@jeff-de-bruges.com" class="text-primary decor-none">
+                            <strong>contactonline@jeff-de-bruges.com</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-contact">
+                    <img src="./assets/icone/map-pin-2-line.svg" class="icone-50px" alt="Icône de localisation">
+                    <div>
+                        <h2>Par courrier :</h2>
+                        <p>Jeff de Bruges - Service consommateurs</p>
+                        <p>Parc du Bel Air</p>
+                        <p>12 avenue Joseph Paxton</p>
+                        <p>77164 Ferrières-en-Brie</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row-resp w-90pc m-auto items-start gap-32 justify-between">
+                <div class="card-contact">
+                    <h2 class="text-center">Par les réseaux sociaux :</h2>
+                    <div class="flex flex-row gap-16">
+                        <a href="#"><img src="./assets/icone/instagram-line.svg" class="icone-50px" alt="Icône Instagram"></a>
+                        <a href="#"><img src="./assets/icone/tiktok-line.svg" class="icone-50px" alt="Icône TikTok"></a>
+                        <a href="#"><img src="./assets/icone/facebook-circle-line.svg" class="icone-50px" alt="Icône Facebook"></a>
+                        <a href="#"><img src="./assets/icone/linkedin-box-line.svg" class="icone-50px" alt="Icône LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="bg-secondary w-60pc">
+                    <h2 class="text-center py-16">Par le formulaire de contact :</h2>
+                    <form id="contact" class="flex flex-col gap-32 bg-blanc2 rounded-20 w-90pc m-auto text-24">
+                        <div class="flex flex-row-resp gap-64 justify-center">
+                            <div class="flex flex-col">
+                                <label for="name">Nom :</label>
+                                <input type="text" id="name" name="name" placeholder="Ex : Julien" required>
+                                
+                                <label for="firstname">Prénom :</label>
+                                <input type="text" id="firstname" name="firstname" placeholder="Ex : Dupont" required>
+                            </div>
+                            
+                            <div class="flex flex-col">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" placeholder="Ex : julien.dupont@gmail.com" required>
+                                
+                                <label for="phone">Numéro de téléphone :</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Ex : 06 06 06 06 06" required>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col">
+                            <label for="vous-etes">Objet</label>
+                            <select id="vous-etes" name="vous-etes">
+                                <option value="candidature">Candidature</option>
+                                <option value="livraison">Livraison</option>
+                                <option value="reclamation">Réclamation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Bonjour, Je vous contacte pour une candidature en alternance. Merci par avance pour votre retour." required></textarea>
+                        </div>
+
+                        <button type="submit" class="cta">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="p-40-30 items-center justify-center flex flex-col gap-24">
+            <div class="flex flex-row-resp gap-64 items-center">
+                <div class="flex flex-row-resp items-center w-35pc gap-16">
+                    <div>
+                        <img src="./assets/img/img_club.png" alt="Icône du club">
+                    </div>
+                    <div class="text-24 flex flex-col gap-16">
+                        <p>Intégrez le Jeff Club et profitez toute l'année de 20% de remise sur les collections tablettes de chocolat et snacking Jeff</p>
+                        <a href="#" class="cta"> Rejoindre le club </a>
+                    </div>
+                </div>
+                <div class="w-35pc flex flex-col gap-24">
+                    <h2 class="text-24">S’abonner à la Newsletter :</h2>
+                    <form class="newsletter flex flex-row-resp gap-8">
+                        <input type="text" class="form-newsletter" placeholder="Email">
+                        <button type="submit" class="cta">Envoyer</button>
+                    </form>
+                    <h2 class="text-24">Nous suivre :</h2>
+                    <div class="flex flex-row gap-16">
+                        <a href="#"><img src="./assets/icone/instagram-line.svg" class="icone-50px" alt="Icône Instagram"></a>
+                        <a href="#"><img src="./assets/icone/tiktok-line.svg" class="icone-50px" alt="Icône TikTok"></a>
+                        <a href="#"><img src="./assets/icone/facebook-circle-line.svg" class="icone-50px" alt="Icône Facebook"></a>
+                        <a href="#"><img src="./assets/icone/linkedin-box-line.svg" class="icone-50px" alt="Icône LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row items-center justify-center flex-wrap gap-8">
+                <p>©Jeffdebruges</p>
+                <p>-</p> 
+                <a href="#" class="text-white decor-none">Plan du site</a> 
+                <p>-</p> 
+                <a href="#" class="text-white decor-none">CGV</a> 
+                <p>-</p> 
+                <a href="#" class="text-white decor-none">Mentions légales</a>
+                <p>-</p> 
+                <a href="#" class="text-white decor-none">Politique de confidentialité</a> 
+                <p>-</p> 
+                <a href="./contact.html" class="text-white decor-none">Contact</a>
+            </div>
+        </footer>
+    </body>
+</html>
