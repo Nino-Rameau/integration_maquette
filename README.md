@@ -2,6 +2,11 @@
 
 Intégration d'une maquette Figma en HTML et CSS de trois pages : Accueil, Produits, Contact.
 
+Les pages sont accessibles via les liens suivants :
+- [Accueil](https://nino-rameau.github.io/integration_maquette/)
+- [Produits](https://nino-rameau.github.io/integration_maquette/categorie_chocolat.html)
+- [Contact](https://nino-rameau.github.io/integration_maquette/contact.html)
+
 ## Sommaire
 
 1. [Technologies utilisées](#technologies-utilisées)
@@ -17,10 +22,10 @@ Intégration d'une maquette Figma en HTML et CSS de trois pages : Accueil, Produ
 
 ## Déploiement
 
-L'intégration est visible sur : [visible](lien).
+L'intégration est visible sur : [ce lien](https://nino-rameau.github.io/integration_maquette/).
 
 ## Aperçu
-![alt img](lien)
+![alt img](./img_repo/accueil.png)
 
 ## Auteur
 
